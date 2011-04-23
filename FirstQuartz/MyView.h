@@ -14,5 +14,7 @@
     
 }
 - (void)drawStAndrewsInRect:(CGRect) rect;
+- (void)drawSuisseInRect:(CGRect) rect;
 - (void)drawTriColorInRect:(CGRect) rect;
+- (void)drawUnionFlagInRect:(CGRect) rect;
 @end
