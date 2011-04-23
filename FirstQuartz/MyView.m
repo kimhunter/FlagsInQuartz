@@ -31,7 +31,7 @@
     CGContextSetRGBFillColor(c, 0, 0, 0.8, 1);
     CGContextAddRect(c, rect);
     CGContextDrawPath(c, kCGPathFill);
-    [self drawUnionFlagInRect:CGRectMake(0, CGRectGetMidY(rect), CGRectGetMidX(rect), CGRectGetMidY(rect))];
+    [self drawUnionFlagInRect:CGRectMake(rect.origin.x, CGRectGetMidY(rect), CGRectGetMidX(rect), CGRectGetMidY(rect))];
     
 
 }
