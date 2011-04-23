@@ -17,4 +17,6 @@
 - (void)drawSuisseInRect:(CGRect) rect;
 - (void)drawTriColorInRect:(CGRect) rect;
 - (void)drawUnionFlagInRect:(CGRect) rect;
+-(void)drawAustrailianFlagInRect:(CGRect) rect;
+
 @end

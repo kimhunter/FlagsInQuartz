@@ -22,41 +22,54 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     CGRect rect = [self frame];
-    [self drawUnionFlagInRect:rect];
+    [self drawAustrailianFlagInRect:rect];
 }
 
-- (void)drawUnionFlagInRect:(CGRect) rect
+-(void)drawAustrailianFlagInRect:(CGRect) rect
 {
     CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+    CGContextSetRGBFillColor(c, 0, 0, 0.8, 1);
+    CGContextAddRect(c, rect);
+    CGContextDrawPath(c, kCGPathFill);
+    [self drawUnionFlagInRect:CGRectMake(0, CGRectGetMidY(rect), CGRectGetMidX(rect), CGRectGetMidY(rect))];
+    
+
+}
+    - (void)drawUnionFlagInRect:(CGRect) rect
+{
+    CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+    CGContextClipToRect(c, rect);
+
     [self drawStAndrewsInRect:rect];
+    
     CGContextSetRGBStrokeColor(c, .9, 0, 0, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.09);
-
     CGContextBeginPath(c);
-    CGContextMoveToPoint(c, 0, 0);
-    CGContextAddLineToPoint(c, rect.size.width, rect.size.height);
-    CGContextMoveToPoint(c, 0, rect.size.height);
-    CGContextAddLineToPoint(c, rect.size.width, 0);
+    CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
+    CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
+    CGContextMoveToPoint(c, 0, rect.origin.y + rect.size.height);
+    CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y);
     CGContextDrawPath(c, kCGPathStroke);
 
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.2);
-
+    
     CGContextBeginPath(c);
-    CGContextMoveToPoint(c, CGRectGetMidX(rect), 0);
-    CGContextAddLineToPoint(c, CGRectGetMidX(rect), rect.size.height);
-    CGContextMoveToPoint(c, 0, CGRectGetMidY(rect));
+    CGContextMoveToPoint(c, CGRectGetMidX(rect), rect.origin.y);
+    CGContextAddLineToPoint(c, CGRectGetMidX(rect), rect.origin.y+rect.size.height);
+    CGContextMoveToPoint(c, rect.origin.x, CGRectGetMidY(rect));
     CGContextAddLineToPoint(c, rect.size.width, CGRectGetMidY(rect));
+    
     CGContextDrawPath(c, kCGPathStroke);
 
     CGContextSetRGBStrokeColor(c, .9, 0, 0, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.1);
     
     CGContextBeginPath(c);
-    CGContextMoveToPoint(c, CGRectGetMidX(rect), 0);
-    CGContextAddLineToPoint(c, CGRectGetMidX(rect), rect.size.height);
-    CGContextMoveToPoint(c, 0, CGRectGetMidY(rect));
-    CGContextAddLineToPoint(c, rect.size.width, CGRectGetMidY(rect));
+    CGContextMoveToPoint(c, CGRectGetMidX(rect), rect.origin.y);
+    CGContextAddLineToPoint(c, CGRectGetMidX(rect), rect.origin.y+rect.size.height);
+    CGContextMoveToPoint(c, rect.origin.x, CGRectGetMidY(rect));
+    CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, CGRectGetMidY(rect));
     CGContextDrawPath(c, kCGPathStroke);
 }
 
@@ -104,19 +117,21 @@
 - (void)drawStAndrewsInRect:(CGRect) rect
 {
     CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+    CGContextClipToRect(c, rect);
     //blue background
     CGContextSetRGBFillColor(c, 0, 0, 0.8, 1);
     CGContextAddRect(c, rect);
     CGContextDrawPath(c, kCGPathFill);
-    
+
     //white crosses
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.2);
     CGContextBeginPath(c);
-    CGContextMoveToPoint(c, 0, 0);
-    CGContextAddLineToPoint(c, rect.size.width, rect.size.height);
-    CGContextMoveToPoint(c, 0, rect.size.height);
-    CGContextAddLineToPoint(c, rect.size.width, 0);    
+    CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
+    CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
+
+    CGContextMoveToPoint(c, rect.origin.x, rect.origin.y+rect.size.height);
+    CGContextAddLineToPoint(c, rect.size.width, rect.origin.y);    
     CGContextDrawPath(c, kCGPathStroke);
 }
 - (void)dealloc
