@@ -31,12 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3BCEC2591362770A0008792E /* FirstQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstQuartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEC2591362770A0008792E /* FlagsInQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagsInQuartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCEC25D1362770A0008792E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3BCEC2601362770A0008792E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3BCEC2611362770A0008792E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3BCEC2621362770A0008792E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3BCEC2651362770A0008792E /* FirstQuartz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstQuartz-Info.plist"; sourceTree = "<group>"; };
+		3BCEC2651362770A0008792E /* FlagsInQuartz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlagsInQuartz-Info.plist"; sourceTree = "<group>"; };
 		3BCEC2671362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BCEC2691362770A0008792E /* FirstQuartz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstQuartz-Prefix.pch"; sourceTree = "<group>"; };
 		3BCEC26A1362770A0008792E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		3BCEC26F1362770A0008792E /* FirstQuartzAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstQuartzAppDelegate.h; sourceTree = "<group>"; };
 		3BCEC2701362770A0008792E /* FirstQuartzAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstQuartzAppDelegate.m; sourceTree = "<group>"; };
 		3BCEC2731362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		3BCEC27A1362770A0008792E /* FirstQuartzTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstQuartzTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BCEC2801362770A0008792E /* FirstQuartzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstQuartzTests-Info.plist"; sourceTree = "<group>"; };
+		3BCEC27A1362770A0008792E /* FlagsInQuartzTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlagsInQuartzTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEC2801362770A0008792E /* FlagsInQuartzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlagsInQuartzTests-Info.plist"; sourceTree = "<group>"; };
 		3BCEC2821362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BCEC2841362770A0008792E /* FirstQuartzTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstQuartzTests-Prefix.pch"; sourceTree = "<group>"; };
 		3BCEC2851362770A0008792E /* FirstQuartzTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstQuartzTests.h; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		3BCEC25A1362770A0008792E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEC2591362770A0008792E /* FirstQuartz.app */,
-				3BCEC27A1362770A0008792E /* FirstQuartzTests.octest */,
+				3BCEC2591362770A0008792E /* FlagsInQuartz.app */,
+				3BCEC27A1362770A0008792E /* FlagsInQuartzTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 		3BCEC2641362770A0008792E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEC2651362770A0008792E /* FirstQuartz-Info.plist */,
+				3BCEC2651362770A0008792E /* FlagsInQuartz-Info.plist */,
 				3BCEC2661362770A0008792E /* InfoPlist.strings */,
 				3BCEC2691362770A0008792E /* FirstQuartz-Prefix.pch */,
 				3BCEC26A1362770A0008792E /* main.m */,
@@ -150,7 +150,7 @@
 		3BCEC27F1362770A0008792E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3BCEC2801362770A0008792E /* FirstQuartzTests-Info.plist */,
+				3BCEC2801362770A0008792E /* FlagsInQuartzTests-Info.plist */,
 				3BCEC2811362770A0008792E /* InfoPlist.strings */,
 				3BCEC2841362770A0008792E /* FirstQuartzTests-Prefix.pch */,
 			);
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3BCEC2581362770A0008792E /* FirstQuartz */ = {
+		3BCEC2581362770A0008792E /* FlagsInQuartz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BCEC28B1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartz" */;
+			buildConfigurationList = 3BCEC28B1362770A0008792E /* Build configuration list for PBXNativeTarget "FlagsInQuartz" */;
 			buildPhases = (
 				3BCEC2551362770A0008792E /* Sources */,
 				3BCEC2561362770A0008792E /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = FirstQuartz;
+			name = FlagsInQuartz;
 			productName = FirstQuartz;
-			productReference = 3BCEC2591362770A0008792E /* FirstQuartz.app */;
+			productReference = 3BCEC2591362770A0008792E /* FlagsInQuartz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3BCEC2791362770A0008792E /* FirstQuartzTests */ = {
+		3BCEC2791362770A0008792E /* FlagsInQuartzTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BCEC28E1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartzTests" */;
+			buildConfigurationList = 3BCEC28E1362770A0008792E /* Build configuration list for PBXNativeTarget "FlagsInQuartzTests" */;
 			buildPhases = (
 				3BCEC2751362770A0008792E /* Sources */,
 				3BCEC2761362770A0008792E /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				3BCEC27D1362770A0008792E /* PBXTargetDependency */,
 			);
-			name = FirstQuartzTests;
+			name = FlagsInQuartzTests;
 			productName = FirstQuartzTests;
-			productReference = 3BCEC27A1362770A0008792E /* FirstQuartzTests.octest */;
+			productReference = 3BCEC27A1362770A0008792E /* FlagsInQuartzTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +201,7 @@
 /* Begin PBXProject section */
 		3BCEC2501362770A0008792E /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 3BCEC2531362770A0008792E /* Build configuration list for PBXProject "FirstQuartz" */;
+			buildConfigurationList = 3BCEC2531362770A0008792E /* Build configuration list for PBXProject "FlagsInQuartz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,8 +213,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3BCEC2581362770A0008792E /* FirstQuartz */,
-				3BCEC2791362770A0008792E /* FirstQuartzTests */,
+				3BCEC2581362770A0008792E /* FlagsInQuartz */,
+				3BCEC2791362770A0008792E /* FlagsInQuartzTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,7 +281,7 @@
 /* Begin PBXTargetDependency section */
 		3BCEC27D1362770A0008792E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3BCEC2581362770A0008792E /* FirstQuartz */;
+			target = 3BCEC2581362770A0008792E /* FlagsInQuartz */;
 			targetProxy = 3BCEC27C1362770A0008792E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -363,8 +363,8 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstQuartz/FirstQuartz-Prefix.pch";
-				INFOPLIST_FILE = "FirstQuartz/FirstQuartz-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FirstQuartz/FlagsInQuartz-Info.plist";
+				PRODUCT_NAME = FlagsInQuartz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -378,8 +378,8 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstQuartz/FirstQuartz-Prefix.pch";
-				INFOPLIST_FILE = "FirstQuartz/FirstQuartz-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FirstQuartz/FlagsInQuartz-Info.plist";
+				PRODUCT_NAME = FlagsInQuartz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -395,12 +395,12 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstQuartzTests/FirstQuartzTests-Prefix.pch";
-				INFOPLIST_FILE = "FirstQuartzTests/FirstQuartzTests-Info.plist";
+				INFOPLIST_FILE = "FirstQuartzTests/FlagsInQuartzTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FlagsInQuartzTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -417,12 +417,12 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstQuartzTests/FirstQuartzTests-Prefix.pch";
-				INFOPLIST_FILE = "FirstQuartzTests/FirstQuartzTests-Info.plist";
+				INFOPLIST_FILE = "FirstQuartzTests/FlagsInQuartzTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FlagsInQuartzTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -431,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3BCEC2531362770A0008792E /* Build configuration list for PBXProject "FirstQuartz" */ = {
+		3BCEC2531362770A0008792E /* Build configuration list for PBXProject "FlagsInQuartz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BCEC2891362770A0008792E /* Debug */,
@@ -440,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BCEC28B1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartz" */ = {
+		3BCEC28B1362770A0008792E /* Build configuration list for PBXNativeTarget "FlagsInQuartz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BCEC28C1362770A0008792E /* Debug */,
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BCEC28E1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartzTests" */ = {
+		3BCEC28E1362770A0008792E /* Build configuration list for PBXNativeTarget "FlagsInQuartzTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BCEC28F1362770A0008792E /* Debug */,
