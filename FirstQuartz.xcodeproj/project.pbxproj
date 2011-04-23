@@ -17,6 +17,7 @@
 		3BCEC2831362770A0008792E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC2811362770A0008792E /* InfoPlist.strings */; };
 		3BCEC2861362770A0008792E /* FirstQuartzTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC2851362770A0008792E /* FirstQuartzTests.h */; };
 		3BCEC2881362770A0008792E /* FirstQuartzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC2871362770A0008792E /* FirstQuartzTests.m */; };
+		3BCEC293136277310008792E /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC292136277310008792E /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +36,22 @@
 		3BCEC2601362770A0008792E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3BCEC2611362770A0008792E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3BCEC2621362770A0008792E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3BCEC2651362770A0008792E /* FirstQuartz-Info.plist */ = {isa = PBXFileReference; path = "FirstQuartz-Info.plist"; sourceTree = "<group>"; };
+		3BCEC2651362770A0008792E /* FirstQuartz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstQuartz-Info.plist"; sourceTree = "<group>"; };
 		3BCEC2671362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3BCEC2691362770A0008792E /* FirstQuartz-Prefix.pch */ = {isa = PBXFileReference; path = "FirstQuartz-Prefix.pch"; sourceTree = "<group>"; };
+		3BCEC2691362770A0008792E /* FirstQuartz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstQuartz-Prefix.pch"; sourceTree = "<group>"; };
 		3BCEC26A1362770A0008792E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BCEC26D1362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		3BCEC26F1362770A0008792E /* FirstQuartzAppDelegate.h */ = {isa = PBXFileReference; path = FirstQuartzAppDelegate.h; sourceTree = "<group>"; };
+		3BCEC26F1362770A0008792E /* FirstQuartzAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstQuartzAppDelegate.h; sourceTree = "<group>"; };
 		3BCEC2701362770A0008792E /* FirstQuartzAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstQuartzAppDelegate.m; sourceTree = "<group>"; };
 		3BCEC2731362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3BCEC27A1362770A0008792E /* FirstQuartzTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstQuartzTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BCEC2801362770A0008792E /* FirstQuartzTests-Info.plist */ = {isa = PBXFileReference; path = "FirstQuartzTests-Info.plist"; sourceTree = "<group>"; };
+		3BCEC2801362770A0008792E /* FirstQuartzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstQuartzTests-Info.plist"; sourceTree = "<group>"; };
 		3BCEC2821362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3BCEC2841362770A0008792E /* FirstQuartzTests-Prefix.pch */ = {isa = PBXFileReference; path = "FirstQuartzTests-Prefix.pch"; sourceTree = "<group>"; };
+		3BCEC2841362770A0008792E /* FirstQuartzTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstQuartzTests-Prefix.pch"; sourceTree = "<group>"; };
 		3BCEC2851362770A0008792E /* FirstQuartzTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstQuartzTests.h; sourceTree = "<group>"; };
 		3BCEC2871362770A0008792E /* FirstQuartzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstQuartzTests.m; sourceTree = "<group>"; };
+		3BCEC291136277310008792E /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MyView.h; sourceTree = "<group>"; };
+		3BCEC292136277310008792E /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				3BCEC2701362770A0008792E /* FirstQuartzAppDelegate.m */,
 				3BCEC2721362770A0008792E /* MainMenu.xib */,
 				3BCEC2641362770A0008792E /* Supporting Files */,
+				3BCEC291136277310008792E /* MyView.h */,
+				3BCEC292136277310008792E /* MyView.m */,
 			);
 			path = FirstQuartz;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			files = (
 				3BCEC26B1362770A0008792E /* main.m in Sources */,
 				3BCEC2711362770A0008792E /* FirstQuartzAppDelegate.m in Sources */,
+				3BCEC293136277310008792E /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +447,7 @@
 				3BCEC28D1362770A0008792E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BCEC28E1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartzTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +456,7 @@
 				3BCEC2901362770A0008792E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
