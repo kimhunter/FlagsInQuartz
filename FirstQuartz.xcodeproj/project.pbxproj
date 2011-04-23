@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BCEC25E1362770A0008792E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEC25D1362770A0008792E /* Cocoa.framework */; };
+		3BCEC2681362770A0008792E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC2661362770A0008792E /* InfoPlist.strings */; };
+		3BCEC26B1362770A0008792E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC26A1362770A0008792E /* main.m */; };
+		3BCEC26E1362770A0008792E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC26C1362770A0008792E /* Credits.rtf */; };
+		3BCEC2711362770A0008792E /* FirstQuartzAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC2701362770A0008792E /* FirstQuartzAppDelegate.m */; };
+		3BCEC2741362770A0008792E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC2721362770A0008792E /* MainMenu.xib */; };
+		3BCEC27B1362770A0008792E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEC25D1362770A0008792E /* Cocoa.framework */; };
+		3BCEC2831362770A0008792E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC2811362770A0008792E /* InfoPlist.strings */; };
+		3BCEC2861362770A0008792E /* FirstQuartzTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEC2851362770A0008792E /* FirstQuartzTests.h */; };
+		3BCEC2881362770A0008792E /* FirstQuartzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEC2871362770A0008792E /* FirstQuartzTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BCEC27C1362770A0008792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BCEC2501362770A0008792E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BCEC2581362770A0008792E;
+			remoteInfo = FirstQuartz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BCEC2591362770A0008792E /* FirstQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstQuartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEC25D1362770A0008792E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3BCEC2601362770A0008792E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3BCEC2611362770A0008792E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3BCEC2621362770A0008792E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BCEC2651362770A0008792E /* FirstQuartz-Info.plist */ = {isa = PBXFileReference; path = "FirstQuartz-Info.plist"; sourceTree = "<group>"; };
+		3BCEC2671362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BCEC2691362770A0008792E /* FirstQuartz-Prefix.pch */ = {isa = PBXFileReference; path = "FirstQuartz-Prefix.pch"; sourceTree = "<group>"; };
+		3BCEC26A1362770A0008792E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BCEC26D1362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3BCEC26F1362770A0008792E /* FirstQuartzAppDelegate.h */ = {isa = PBXFileReference; path = FirstQuartzAppDelegate.h; sourceTree = "<group>"; };
+		3BCEC2701362770A0008792E /* FirstQuartzAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstQuartzAppDelegate.m; sourceTree = "<group>"; };
+		3BCEC2731362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3BCEC27A1362770A0008792E /* FirstQuartzTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstQuartzTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCEC2801362770A0008792E /* FirstQuartzTests-Info.plist */ = {isa = PBXFileReference; path = "FirstQuartzTests-Info.plist"; sourceTree = "<group>"; };
+		3BCEC2821362770A0008792E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BCEC2841362770A0008792E /* FirstQuartzTests-Prefix.pch */ = {isa = PBXFileReference; path = "FirstQuartzTests-Prefix.pch"; sourceTree = "<group>"; };
+		3BCEC2851362770A0008792E /* FirstQuartzTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstQuartzTests.h; sourceTree = "<group>"; };
+		3BCEC2871362770A0008792E /* FirstQuartzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstQuartzTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BCEC2561362770A0008792E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC25E1362770A0008792E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC2761362770A0008792E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC27B1362770A0008792E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BCEC24E1362770A0008792E = {
+			isa = PBXGroup;
+			children = (
+				3BCEC2631362770A0008792E /* FirstQuartz */,
+				3BCEC27E1362770A0008792E /* FirstQuartzTests */,
+				3BCEC25C1362770A0008792E /* Frameworks */,
+				3BCEC25A1362770A0008792E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BCEC25A1362770A0008792E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC2591362770A0008792E /* FirstQuartz.app */,
+				3BCEC27A1362770A0008792E /* FirstQuartzTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BCEC25C1362770A0008792E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC25D1362770A0008792E /* Cocoa.framework */,
+				3BCEC25F1362770A0008792E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BCEC25F1362770A0008792E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC2601362770A0008792E /* AppKit.framework */,
+				3BCEC2611362770A0008792E /* CoreData.framework */,
+				3BCEC2621362770A0008792E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3BCEC2631362770A0008792E /* FirstQuartz */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC26F1362770A0008792E /* FirstQuartzAppDelegate.h */,
+				3BCEC2701362770A0008792E /* FirstQuartzAppDelegate.m */,
+				3BCEC2721362770A0008792E /* MainMenu.xib */,
+				3BCEC2641362770A0008792E /* Supporting Files */,
+			);
+			path = FirstQuartz;
+			sourceTree = "<group>";
+		};
+		3BCEC2641362770A0008792E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC2651362770A0008792E /* FirstQuartz-Info.plist */,
+				3BCEC2661362770A0008792E /* InfoPlist.strings */,
+				3BCEC2691362770A0008792E /* FirstQuartz-Prefix.pch */,
+				3BCEC26A1362770A0008792E /* main.m */,
+				3BCEC26C1362770A0008792E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BCEC27E1362770A0008792E /* FirstQuartzTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC2851362770A0008792E /* FirstQuartzTests.h */,
+				3BCEC2871362770A0008792E /* FirstQuartzTests.m */,
+				3BCEC27F1362770A0008792E /* Supporting Files */,
+			);
+			path = FirstQuartzTests;
+			sourceTree = "<group>";
+		};
+		3BCEC27F1362770A0008792E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEC2801362770A0008792E /* FirstQuartzTests-Info.plist */,
+				3BCEC2811362770A0008792E /* InfoPlist.strings */,
+				3BCEC2841362770A0008792E /* FirstQuartzTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BCEC2581362770A0008792E /* FirstQuartz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEC28B1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartz" */;
+			buildPhases = (
+				3BCEC2551362770A0008792E /* Sources */,
+				3BCEC2561362770A0008792E /* Frameworks */,
+				3BCEC2571362770A0008792E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstQuartz;
+			productName = FirstQuartz;
+			productReference = 3BCEC2591362770A0008792E /* FirstQuartz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BCEC2791362770A0008792E /* FirstQuartzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCEC28E1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartzTests" */;
+			buildPhases = (
+				3BCEC2751362770A0008792E /* Sources */,
+				3BCEC2761362770A0008792E /* Frameworks */,
+				3BCEC2771362770A0008792E /* Resources */,
+				3BCEC2781362770A0008792E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BCEC27D1362770A0008792E /* PBXTargetDependency */,
+			);
+			name = FirstQuartzTests;
+			productName = FirstQuartzTests;
+			productReference = 3BCEC27A1362770A0008792E /* FirstQuartzTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BCEC2501362770A0008792E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3BCEC2531362770A0008792E /* Build configuration list for PBXProject "FirstQuartz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3BCEC24E1362770A0008792E;
+			productRefGroup = 3BCEC25A1362770A0008792E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BCEC2581362770A0008792E /* FirstQuartz */,
+				3BCEC2791362770A0008792E /* FirstQuartzTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BCEC2571362770A0008792E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC2681362770A0008792E /* InfoPlist.strings in Resources */,
+				3BCEC26E1362770A0008792E /* Credits.rtf in Resources */,
+				3BCEC2741362770A0008792E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC2771362770A0008792E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC2831362770A0008792E /* InfoPlist.strings in Resources */,
+				3BCEC2861362770A0008792E /* FirstQuartzTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BCEC2781362770A0008792E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BCEC2551362770A0008792E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC26B1362770A0008792E /* main.m in Sources */,
+				3BCEC2711362770A0008792E /* FirstQuartzAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BCEC2751362770A0008792E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCEC2881362770A0008792E /* FirstQuartzTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BCEC27D1362770A0008792E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BCEC2581362770A0008792E /* FirstQuartz */;
+			targetProxy = 3BCEC27C1362770A0008792E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BCEC2661362770A0008792E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEC2671362770A0008792E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3BCEC26C1362770A0008792E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEC26D1362770A0008792E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3BCEC2721362770A0008792E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEC2731362770A0008792E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3BCEC2811362770A0008792E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BCEC2821362770A0008792E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BCEC2891362770A0008792E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3BCEC28A1362770A0008792E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3BCEC28C1362770A0008792E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirstQuartz/FirstQuartz-Prefix.pch";
+				INFOPLIST_FILE = "FirstQuartz/FirstQuartz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3BCEC28D1362770A0008792E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirstQuartz/FirstQuartz-Prefix.pch";
+				INFOPLIST_FILE = "FirstQuartz/FirstQuartz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3BCEC28F1362770A0008792E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FirstQuartz.app/Contents/MacOS/FirstQuartz";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirstQuartzTests/FirstQuartzTests-Prefix.pch";
+				INFOPLIST_FILE = "FirstQuartzTests/FirstQuartzTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3BCEC2901362770A0008792E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FirstQuartz.app/Contents/MacOS/FirstQuartz";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirstQuartzTests/FirstQuartzTests-Prefix.pch";
+				INFOPLIST_FILE = "FirstQuartzTests/FirstQuartzTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BCEC2531362770A0008792E /* Build configuration list for PBXProject "FirstQuartz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEC2891362770A0008792E /* Debug */,
+				3BCEC28A1362770A0008792E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BCEC28B1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEC28C1362770A0008792E /* Debug */,
+				3BCEC28D1362770A0008792E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BCEC28E1362770A0008792E /* Build configuration list for PBXNativeTarget "FirstQuartzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCEC28F1362770A0008792E /* Debug */,
+				3BCEC2901362770A0008792E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BCEC2501362770A0008792E /* Project object */;
+}
