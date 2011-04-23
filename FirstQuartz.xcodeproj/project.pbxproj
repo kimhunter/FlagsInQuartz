@@ -50,7 +50,7 @@
 		3BCEC2841362770A0008792E /* FirstQuartzTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstQuartzTests-Prefix.pch"; sourceTree = "<group>"; };
 		3BCEC2851362770A0008792E /* FirstQuartzTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstQuartzTests.h; sourceTree = "<group>"; };
 		3BCEC2871362770A0008792E /* FirstQuartzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstQuartzTests.m; sourceTree = "<group>"; };
-		3BCEC291136277310008792E /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MyView.h; sourceTree = "<group>"; };
+		3BCEC291136277310008792E /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		3BCEC292136277310008792E /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

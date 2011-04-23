@@ -1,2 +1,5 @@
 /FirstQuartz.xcodeproj/xcuserdata/
 /FirstQuartz.xcodeproj/project.xcworkspace/
+*.pbxuser
+*.mode1v3
+build

@@ -22,7 +22,24 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     CGRect rect = [self frame];
-    [self drawAustrailianFlagInRect:rect];
+    CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+
+    rect.size = CGSizeMake(rect.size.width/2, rect.size.height/2);
+    [self drawSuisseInRect:rect];
+    
+    rect.origin = CGPointMake(CGRectGetMidX([self frame]), CGRectGetMidY([self frame]));
+
+    rect.origin.x = [self frame].origin.x;
+    [self drawTriColorInRect:rect];
+
+    
+	rect.origin = CGPointMake(CGRectGetMidX([self frame]), CGRectGetMidY([self frame]));
+    [self drawStAndrewsInRect:rect];
+
+    rect.origin = CGPointMake(CGRectGetMidX([self frame]), [self frame].origin.y);
+    [self drawTriColorInRect:rect];
+
+
 }
 
 -(void)drawAustrailianFlagInRect:(CGRect) rect
@@ -38,7 +55,6 @@
     - (void)drawUnionFlagInRect:(CGRect) rect
 {
     CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
-    CGContextClipToRect(c, rect);
 
     [self drawStAndrewsInRect:rect];
     
@@ -86,8 +102,11 @@
 
    
     float crossScale = 0.7;
-    CGContextMoveToPoint(c, CGRectGetMidX(rect),CGRectGetMidY(rect)-CGRectGetMidY(rect) * crossScale);
+    float crossSize = rect.size.height * crossScale;
+    
+    CGContextMoveToPoint(c, CGRectGetMidX(rect),CGRectGetMidY(rect)-(crossSize/2));
     CGContextAddLineToPoint(c, CGRectGetMidX(rect), CGRectGetMidY(rect) * (1+crossScale)); 
+    
     CGContextMoveToPoint(c, CGRectGetMidX(rect)-(CGRectGetMidY(rect) * crossScale), CGRectGetMidY(rect));
     CGContextAddLineToPoint(c, CGRectGetMidX(rect)+(CGRectGetMidY(rect) * crossScale), CGRectGetMidY(rect));
 
@@ -117,7 +136,6 @@
 - (void)drawStAndrewsInRect:(CGRect) rect
 {
     CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
-    CGContextClipToRect(c, rect);
     //blue background
     CGContextSetRGBFillColor(c, 0, 0, 0.8, 1);
     CGContextAddRect(c, rect);
@@ -127,11 +145,12 @@
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.2);
     CGContextBeginPath(c);
+    CGContextClipToRect(c, rect);
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
 
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y+rect.size.height);
-    CGContextAddLineToPoint(c, rect.size.width, rect.origin.y);    
+    CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y);    
     CGContextDrawPath(c, kCGPathStroke);
 }
 - (void)dealloc
