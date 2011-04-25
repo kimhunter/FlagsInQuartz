@@ -25,20 +25,17 @@
     CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
 
     rect.size = CGSizeMake(rect.size.width/2, rect.size.height/2);
-	[self drawUnionFlagInRect:rect];
-    
+    [self drawSuisseInRect:rect];
+
     rect.origin = CGPointMake(CGRectGetMidX([self frame]), CGRectGetMidY([self frame]));
 
     rect.origin.x = [self frame].origin.x;
     [self drawTriColorInRect:rect];
 
-    
-	
-    rect.origin = CGPointMake(CGRectGetMidX([self frame]), [self frame].origin.y);
-	[self drawSuisseInRect:rect];
+	rect.origin = CGPointMake(CGRectGetMidX([self frame]), [self frame].origin.y);
+	[self drawUnionFlagInRect:rect];
 
 	rect.origin = CGPointMake(CGRectGetMidX([self frame]), CGRectGetMidY([self frame]));
-	CGContextClipToRect(c, rect);
     [self drawStAndrewsInRect:rect];
 
 
@@ -64,6 +61,9 @@
     CGContextSetRGBStrokeColor(c, .9, 0, 0, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.09);
     CGContextBeginPath(c);
+	CGContextSaveGState(c);
+	CGContextClipToRect(c, rect);
+
 	// red line bottom left to top right
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
@@ -71,6 +71,7 @@
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y + rect.size.height);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y);
     CGContextDrawPath(c, kCGPathStroke);
+	CGContextRestoreGState(c);
 
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.2);
@@ -80,6 +81,7 @@
     CGContextAddLineToPoint(c, CGRectGetMidX(rect), rect.origin.y+rect.size.height);
     CGContextMoveToPoint(c, rect.origin.x, CGRectGetMidY(rect));
     CGContextAddLineToPoint(c,rect.origin.x + rect.size.width, CGRectGetMidY(rect));
+
     
     CGContextDrawPath(c, kCGPathStroke);
 
@@ -91,6 +93,7 @@
     CGContextAddLineToPoint(c, CGRectGetMidX(rect), rect.origin.y+rect.size.height);
     CGContextMoveToPoint(c, rect.origin.x, CGRectGetMidY(rect));
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, CGRectGetMidY(rect));
+	
     CGContextDrawPath(c, kCGPathStroke);
 }
 
@@ -150,13 +153,17 @@
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.2);
     CGContextBeginPath(c);
-    
+	CGContextSaveGState(c);
+	CGContextClipToRect(c, rect);
+
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
 
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y+rect.size.height);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y);    
     CGContextDrawPath(c, kCGPathStroke);
+	CGContextRestoreGState(c);
+
 }
 - (void)dealloc
 {
