@@ -25,7 +25,7 @@
     CGContextRef c = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
 
     rect.size = CGSizeMake(rect.size.width/2, rect.size.height/2);
-    [self drawSuisseInRect:rect];
+	[self drawUnionFlagInRect:rect];
     
     rect.origin = CGPointMake(CGRectGetMidX([self frame]), CGRectGetMidY([self frame]));
 
@@ -33,11 +33,14 @@
     [self drawTriColorInRect:rect];
 
     
+	
+    rect.origin = CGPointMake(CGRectGetMidX([self frame]), [self frame].origin.y);
+	[self drawSuisseInRect:rect];
+
 	rect.origin = CGPointMake(CGRectGetMidX([self frame]), CGRectGetMidY([self frame]));
+	CGContextClipToRect(c, rect);
     [self drawStAndrewsInRect:rect];
 
-    rect.origin = CGPointMake(CGRectGetMidX([self frame]), [self frame].origin.y);
-    [self drawUnionFlagInRect:rect];
 
 
 }
@@ -147,7 +150,7 @@
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.2);
     CGContextBeginPath(c);
-    //CGContextClipToRect(c, rect);
+    
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
 
