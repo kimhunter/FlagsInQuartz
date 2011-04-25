@@ -37,7 +37,7 @@
     [self drawStAndrewsInRect:rect];
 
     rect.origin = CGPointMake(CGRectGetMidX([self frame]), [self frame].origin.y);
-    [self drawTriColorInRect:rect];
+    [self drawUnionFlagInRect:rect];
 
 
 }
@@ -61,9 +61,11 @@
     CGContextSetRGBStrokeColor(c, .9, 0, 0, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.09);
     CGContextBeginPath(c);
+	// red line bottom left to top right
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
-    CGContextMoveToPoint(c, 0, rect.origin.y + rect.size.height);
+	// top left to bottom right
+    CGContextMoveToPoint(c, rect.origin.x, rect.origin.y + rect.size.height);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y);
     CGContextDrawPath(c, kCGPathStroke);
 
@@ -74,7 +76,7 @@
     CGContextMoveToPoint(c, CGRectGetMidX(rect), rect.origin.y);
     CGContextAddLineToPoint(c, CGRectGetMidX(rect), rect.origin.y+rect.size.height);
     CGContextMoveToPoint(c, rect.origin.x, CGRectGetMidY(rect));
-    CGContextAddLineToPoint(c, rect.size.width, CGRectGetMidY(rect));
+    CGContextAddLineToPoint(c,rect.origin.x + rect.size.width, CGRectGetMidY(rect));
     
     CGContextDrawPath(c, kCGPathStroke);
 
@@ -145,7 +147,7 @@
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
     CGContextSetLineWidth(c, rect.size.height * 0.2);
     CGContextBeginPath(c);
-    CGContextClipToRect(c, rect);
+    //CGContextClipToRect(c, rect);
     CGContextMoveToPoint(c, rect.origin.x, rect.origin.y);
     CGContextAddLineToPoint(c, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
 
