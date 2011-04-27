@@ -74,7 +74,7 @@
 	CGContextRestoreGState(c);
 
     CGContextSetRGBStrokeColor(c, 1, 1, 1, 1);
-    CGContextSetLineWidth(c, rect.size.height * 0.2);
+    CGContextSetLineWidth(c, rect.size.height * 0.3);
     
     CGContextBeginPath(c);
     CGContextMoveToPoint(c, CGRectGetMidX(rect), rect.origin.y);
@@ -86,7 +86,7 @@
     CGContextDrawPath(c, kCGPathStroke);
 
     CGContextSetRGBStrokeColor(c, .9, 0, 0, 1);
-    CGContextSetLineWidth(c, rect.size.height * 0.1);
+    CGContextSetLineWidth(c, rect.size.height * 0.18);
     
     CGContextBeginPath(c);
     CGContextMoveToPoint(c, CGRectGetMidX(rect), rect.origin.y);
